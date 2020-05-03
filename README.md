@@ -3,7 +3,7 @@
 Next Gen eCommerce app for kitabu
 Finish frontend and deploy as alpha stage android app on Google PlayStore
 
-## Objectives 1; Blind Code - 03 May 2020
+## Objectives 1; Blind Code(Init, Home) - 03 May 2020
 
 * [x] 📝 Create app
 * [x] 🔎 Switch to stable channe, upgrade
@@ -25,6 +25,15 @@ Finish frontend and deploy as alpha stage android app on Google PlayStore
 * [ ] 🔍 Debug Cart/my orders
 * [ ] ⬅️ Debug tracking orders
 * [ ] 🙈 Debug My debts
+
+## Objectives 3; Blind Code(Admin)
+
+* [ ] 📝 Side Nav Bar, Merchant account control
+* [ ] 🔎 Dark theme
+* [ ] ⌨️ My Shop ProductViews, DetailViews,
+* [ ] ➡️ My Orders
+* [ ] 🗃  Delivery Status Tracking, Google-Maps
+* [ ] 🔍 My Transactions- My Creditors, My Credits and Payback
 
 
 ## FrontEnd Structure
