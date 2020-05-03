@@ -25,20 +25,20 @@ flutter:
   uses-material-design: true
 
   assets:
-  # splash assets
+    # splash assets
     - assets/logo.jpg
-  # onboarding assets
+    # onboarding assets
     - assets/images/slider_1.png
     - assets/images/slider_2.png
     - assets/images/slider_3.png
-  # profile assets
+    # profile assets
     - assets/profile/logo.png
     - assets/profile/powered_by.png
     - assets/profile/email_icon.png
     - assets/profile/password_icon.png
     - assets/profile/user_icon.png
     - assets/profile/as.png
-  # Home assets
+    # Home assets
     - assets/home/jacket.png
     - assets/home/shoe_thumb_1.png
     - assets/home/shoe_thumb_2.png
@@ -53,10 +53,9 @@ flutter:
     - assets/home/small_tilt_shoe_3.png
     - assets/home/user.png
     - assets/home/watch.png
-    
 
   fonts:
-  # onboarding fonts
+    # onboarding fonts
     - family: Poppins
       fonts:
         - asset: assets/fonts/Poppins-Regular.ttf
