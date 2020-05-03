@@ -25,3 +25,24 @@ Finish frontend and deploy as alpha stage android app on Google PlayStore
 * [ ] 🔍 Debug Cart/my orders
 * [ ] ⬅️ Debug tracking orders
 * [ ] 🙈 Debug My debts
+
+
+## FrontEnd Structure
+
+    * Init
+        * Splash - Dark theme (midnight blue), 5 second loading
+        * Onboarding - Light Theme
+        * Profile and Personal Information - Light Theme
+    * Home (Adding value to customer) 
+        - Bottom Navigation Bar (control); Home, Cart, My Transactions(My Debts)
+        - Light Theme of White and orange
+        * Global Products List, Detail Page
+        * My Cart/ Orders 
+        * Track Orders via live maps geolocation and delivery status
+        * My debts, Pending Balance, Item History, Payback History
+    * Admin (Adding value to merchants)
+        - Side Navigation Bar (Drawer Control) ; Profile, My Shop, My Orders, Delivery, My Transactions(Credits)
+        - Dark theme to show difference- midnight blue, orange
+        - My Shop; ListView, DetailView,
+        - My Orders- Delivery Status Update
+        - Transactions, (My Creditors, Credits and Payback)
