@@ -3,7 +3,7 @@
 Next Gen eCommerce app for kitabu
 Finish frontend and deploy as alpha stage android app on Google PlayStore
 
-## Objectives 1; Blind Code(Init, Home) - 03 May 2020
+## ✅Objectives 1; Blind Code(Init, Home) - 03 May 2020
 
 * [x] 📝 Create app
 * [x] 🔎 Switch to stable channe, upgrade
