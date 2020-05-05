@@ -3,7 +3,7 @@
 Next Gen eCommerce app for kitabu
 Finish frontend and deploy on a closeed Internal Testing Track or Alpha as fits best android app on Google PlayStore
 
-## Objectives 1; Blind Code(Init, Home) - 03 May 2020
+## ✅ Objectives 1; Code(Init, Home)
 
 * [x] 📝 Create app
 * [x] 🔎 Switch to stable channe, upgrade
@@ -15,7 +15,7 @@ Finish frontend and deploy on a closeed Internal Testing Track or Alpha as fits 
 * [x] 🙈 Track orders
 * [x] ✨ My debts
 
-## Objectives 2; Debug Home - 04 May 2020
+## Objectives 2; Debug Home 
 
 * [x] 📝 Solve build failiure issue
 * [x] 🔎 Debug SplashScreen
@@ -26,7 +26,7 @@ Finish frontend and deploy on a closeed Internal Testing Track or Alpha as fits 
 * [ ] ⬅️ Debug tracking orders
 * [ ] 🙈 Debug My debts
 
-## Objectives 3; Blind Code(Admin)
+## Objectives 3; Code(Admin)
 
 * [ ] 📝 Side Nav Bar, Merchant account control
 * [ ] 🔎 Dark theme
@@ -35,6 +35,20 @@ Finish frontend and deploy on a closeed Internal Testing Track or Alpha as fits 
 * [ ] 🗃  Delivery Status Tracking, Google-Maps
 * [ ] 🔍 My Transactions- My Creditors, My Credits and Payback
 
+## Objectives 4; Debugging(Admin)
+
+* [ ] 📝 Side Nav Bar, Merchant account control
+* [ ] 🔎 Dark theme
+* [ ] ⌨️ My Shop ProductViews, DetailViews,
+* [ ] ➡️ My Orders
+* [ ] 🗃  Delivery Status Tracking, Google-Maps
+* [ ] 🔍 My Transactions- My Creditors, My Credits and Payback
+
+## Prepping for Shipping @ Alpha Stage
+
+* [ ] 📝 Debugging frontend code
+* [ ] 📝 Signing app
+* [ ] 📝 Deploy to play store
 
 ## FrontEnd Structure
 
