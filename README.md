@@ -18,8 +18,8 @@ Finish frontend and deploy on a closeed Internal Testing Track or Alpha as fits 
 ## Objectives 2; Debug Home - 04 May 2020
 
 * [x] 📝 Solve build failiure issue
-* [ ] 🔎 Debug SplashScreen
-* [ ] ⌨️ Debug onboarding
+* [x] 🔎 Debug SplashScreen
+* [x] ⌨️ Debug onboarding
 * [ ] ➡️ Debug Profile
 * [ ] 🗃  Debug Home, Product List and DetailViews
 * [ ] 🔍 Debug Cart/my orders
