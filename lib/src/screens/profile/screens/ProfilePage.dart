@@ -3,17 +3,17 @@ import 'package:flutter/cupertino.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
-  MapScreenState createState() => MapScreenState();
+  ProfilePageState createState() => ProfilePageState();
 }
 
-class MapScreenState extends State<ProfilePage>
+class ProfilePageState extends State<ProfilePage>
     with SingleTickerProviderStateMixin {
   bool _status = true;
   final FocusNode myFocusNode = FocusNode();
 
   @override
   void initState() {
-    // TODO: implement initState
+    // implement initState
     super.initState();
   }
 
@@ -66,7 +66,7 @@ class MapScreenState extends State<ProfilePage>
                                   shape: BoxShape.circle,
                                   image: new DecorationImage(
                                     image: new ExactAssetImage(
-                                        'assets/images/as.png'),
+                                        'assets/profile/as.png'),
                                     fit: BoxFit.cover,
                                   ),
                                 )),

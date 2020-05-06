@@ -15,7 +15,7 @@ Finish frontend and deploy on a closeed Internal Testing Track or Alpha as fits 
 * [x] 🙈 Track orders
 * [x] ✨ My debts
 
-## Objectives 2; Debug Home 
+## Objectives 2; Debug Home
 
 * [x] 📝 Solve build failiure issue
 * [x] 🔎 Debug SplashScreen

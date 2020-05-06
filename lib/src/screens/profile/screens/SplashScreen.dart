@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lite_cart/src/screens/profile/constants/constants.dart';
+import 'package:lite_cart/src/screens/profile/screens/ProfilePage.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -21,7 +21,11 @@ class SplashScreenState extends State<SplashScreen>
   }
 
   void navigationPage() {
-    Navigator.of(context).pushReplacementNamed(PROFILE);
+    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                ProfilePage()));
   }
 
   @override
@@ -54,7 +58,7 @@ class SplashScreenState extends State<SplashScreen>
               Padding(
                   padding: EdgeInsets.only(bottom: 30.0),
                   child: new Image.asset(
-                    'assets/images/powered_by.png',
+                    'assets/profile/powered_by.png',
                     height: 25.0,
                     fit: BoxFit.scaleDown,
                   ))
@@ -64,7 +68,7 @@ class SplashScreenState extends State<SplashScreen>
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Image.asset(
-                'assets/images/logo.png',
+                'assets/profile/logo.png',
                 width: animation.value * 250,
                 height: animation.value * 250,
               ),

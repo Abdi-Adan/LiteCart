@@ -1,11 +1,12 @@
 import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:lite_cart/src/screens/onboarding/constants/constants.dart';
 import 'package:lite_cart/src/screens/onboarding/model/slider.dart';
 import 'package:lite_cart/src/screens/onboarding/widgets/slide_dots.dart';
 import 'package:lite_cart/src/screens/onboarding/widgets/slide_items/slide_item.dart';
-
+import 'package:lite_cart/src/screens/profile/screens/SplashScreen.dart';
 
 class SliderLayoutView extends StatefulWidget {
   @override
@@ -73,16 +74,25 @@ class _SliderLayoutViewState extends State<SliderLayoutView> {
                         ),
                       ),
                     ),
-                    Align(
-                      alignment: Alignment.bottomLeft,
-                      child: Padding(
-                        padding: EdgeInsets.only(left: 15.0, bottom: 15.0),
-                        child: Text(
-                          Constants.SKIP,
-                          style: TextStyle(
-                            fontFamily: Constants.OPEN_SANS,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 14.0,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                SplashScreen()));
+                      },
+                      child: Align(
+                        alignment: Alignment.bottomLeft,
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 15.0, bottom: 15.0),
+                          child: Text(
+                            Constants.SKIP,
+                            style: TextStyle(
+                              fontFamily: Constants.OPEN_SANS,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 14.0,
+                            ),
                           ),
                         ),
                       ),
