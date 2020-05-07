@@ -6,7 +6,6 @@ import 'package:lite_cart/init/onboarding/constants/constants.dart';
 import 'package:lite_cart/init/onboarding/model/slider.dart';
 import 'package:lite_cart/init/onboarding/widgets/slide_dots.dart';
 import 'package:lite_cart/init/onboarding/widgets/slide_items/slide_item.dart';
-import 'package:lite_cart/init/profile/screens/SplashScreen.dart';
 
 class SliderLayoutView extends StatefulWidget {
   @override
@@ -60,27 +59,26 @@ class _SliderLayoutViewState extends State<SliderLayoutView> {
                 Stack(
                   alignment: AlignmentDirectional.topStart,
                   children: <Widget>[
-                    Align(
-                      alignment: Alignment.bottomRight,
-                      child: Padding(
-                        padding: EdgeInsets.only(right: 15.0, bottom: 15.0),
-                        child: Text(
-                          Constants.NEXT,
-                          style: TextStyle(
-                            fontFamily: Constants.OPEN_SANS,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 14.0,
+                    GestureDetector(
+                      // TODO: impliment next slider
+                      child: Align(
+                        alignment: Alignment.bottomRight,
+                        child: Padding(
+                          padding: EdgeInsets.only(right: 15.0, bottom: 15.0),
+                          child: Text(
+                            Constants.NEXT,
+                            style: TextStyle(
+                              fontFamily: Constants.OPEN_SANS,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 14.0,
+                            ),
                           ),
                         ),
                       ),
                     ),
                     GestureDetector(
                       onTap: () {
-                        Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                SplashScreen()));
+                        Navigator.pushReplacementNamed(context, '/profile');
                       },
                       child: Align(
                         alignment: Alignment.bottomLeft,

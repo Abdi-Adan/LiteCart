@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lite_cart/init/profile/ProfilePage.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -21,11 +20,7 @@ class SplashScreenState extends State<SplashScreen>
   }
 
   void navigationPage() {
-    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                ProfilePage()));
+    Navigator.pushReplacementNamed(context, '/onboarding');
   }
 
   @override

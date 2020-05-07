@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:lite_cart/init/onboarding/ui_view/slider_layout_view.dart';
 
 
-class LandingPage extends StatefulWidget {
+class Onboarding extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _LandingPageState();
+  State<StatefulWidget> createState() => _OnboardingState();
 }
 
-class _LandingPageState extends State<LandingPage> {
+class _OnboardingState extends State<Onboarding> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

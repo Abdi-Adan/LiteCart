@@ -1,7 +1,9 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:lite_cart/init/profile/screens/SplashScreen.dart';
+import 'package:lite_cart/home/pages/mainPage.dart';
+import 'package:lite_cart/init/onboarding/screens/landing_page.dart';
+
+import 'init/ProfilePage.dart';
+import 'init/SplashScreen.dart';
 
 
 void main() => runApp(MyApp());
@@ -14,7 +16,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
       routes: <String, WidgetBuilder>{
-        '/splash': (BuildContext context) => new SplashScreen(),
+        '/splash': (BuildContext context) => SplashScreen(),
+        '/profile': (BuildContext context) => ProfilePage(),
+        '/onboarding': (BuildContext context) => Onboarding(),
+        '/mainpage': (BuildContext context) => MainPage(),
       },
     );
   }

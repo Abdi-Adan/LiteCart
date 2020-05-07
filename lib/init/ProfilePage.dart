@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:lite_cart/init/onboarding/constants/constants.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -20,7 +21,7 @@ class ProfilePageState extends State<ProfilePage>
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        body: new Container(
+        body: Container(
       color: Colors.white,
       child: new ListView(
         children: <Widget>[
@@ -32,27 +33,6 @@ class ProfilePageState extends State<ProfilePage>
                 child: new Column(
                   children: <Widget>[
                     Padding(
-                        padding: EdgeInsets.only(left: 20.0, top: 20.0),
-                        child: new Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            new Icon(
-                              Icons.arrow_back_ios,
-                              color: Colors.black,
-                              size: 22.0,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 25.0),
-                              child: new Text('PROFILE',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 20.0,
-                                      fontFamily: 'sans-serif-light',
-                                      color: Colors.black)),
-                            )
-                          ],
-                        )),
-                    Padding(
                       padding: EdgeInsets.only(top: 20.0),
                       child: new Stack(fit: StackFit.loose, children: <Widget>[
                         new Row(
@@ -60,8 +40,8 @@ class ProfilePageState extends State<ProfilePage>
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             new Container(
-                                width: 140.0,
-                                height: 140.0,
+                                width: 100.0,
+                                height: 100.0,
                                 decoration: new BoxDecoration(
                                   shape: BoxShape.circle,
                                   image: new DecorationImage(
@@ -73,16 +53,21 @@ class ProfilePageState extends State<ProfilePage>
                           ],
                         ),
                         Padding(
-                            padding: EdgeInsets.only(top: 90.0, right: 100.0),
+                            padding: EdgeInsets.only(top: 120.0),
                             child: new Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
                                 new CircleAvatar(
-                                  backgroundColor: Colors.red,
+                                  backgroundColor: Colors.orange,
                                   radius: 25.0,
-                                  child: new Icon(
-                                    Icons.camera_alt,
-                                    color: Colors.white,
+                                  child: Text(
+                                    'Avatar',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontFamily: Constants.OPEN_SANS,
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 14.0,
+                                    ),
                                   ),
                                 )
                               ],
@@ -114,8 +99,10 @@ class ProfilePageState extends State<ProfilePage>
                                   new Text(
                                     'Parsonal Information',
                                     style: TextStyle(
-                                        fontSize: 18.0,
-                                        fontWeight: FontWeight.bold),
+                                      fontFamily: Constants.POPPINS,
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: 20.5,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -139,10 +126,12 @@ class ProfilePageState extends State<ProfilePage>
                                 mainAxisSize: MainAxisSize.min,
                                 children: <Widget>[
                                   new Text(
-                                    'Name',
+                                    'Full Name',
                                     style: TextStyle(
-                                        fontSize: 16.0,
-                                        fontWeight: FontWeight.bold),
+                                      fontSize: 16.0,
+                                      fontFamily: Constants.POPPINS,
+                                      fontWeight: FontWeight.w700,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -161,7 +150,6 @@ class ProfilePageState extends State<ProfilePage>
                                   ),
                                   enabled: !_status,
                                   autofocus: !_status,
-
                                 ),
                               ),
                             ],
@@ -177,10 +165,12 @@ class ProfilePageState extends State<ProfilePage>
                                 mainAxisSize: MainAxisSize.min,
                                 children: <Widget>[
                                   new Text(
-                                    'Email ID',
+                                    'National ID Number',
                                     style: TextStyle(
-                                        fontSize: 16.0,
-                                        fontWeight: FontWeight.bold),
+                                      fontSize: 16.0,
+                                      fontFamily: Constants.POPPINS,
+                                      fontWeight: FontWeight.w700,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -195,7 +185,7 @@ class ProfilePageState extends State<ProfilePage>
                               new Flexible(
                                 child: new TextField(
                                   decoration: const InputDecoration(
-                                      hintText: "Enter Email ID"),
+                                      hintText: "To keep your payments secure"),
                                   enabled: !_status,
                                 ),
                               ),
@@ -214,8 +204,10 @@ class ProfilePageState extends State<ProfilePage>
                                   new Text(
                                     'Mobile',
                                     style: TextStyle(
-                                        fontSize: 16.0,
-                                        fontWeight: FontWeight.bold),
+                                      fontSize: 16.0,
+                                      fontFamily: Constants.POPPINS,
+                                      fontWeight: FontWeight.w700,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -230,7 +222,7 @@ class ProfilePageState extends State<ProfilePage>
                               new Flexible(
                                 child: new TextField(
                                   decoration: const InputDecoration(
-                                      hintText: "Enter Mobile Number"),
+                                      hintText: "Start with +254 7..."),
                                   enabled: !_status,
                                 ),
                               ),
@@ -246,10 +238,12 @@ class ProfilePageState extends State<ProfilePage>
                               Expanded(
                                 child: Container(
                                   child: new Text(
-                                    'Pin Code',
+                                    'Location',
                                     style: TextStyle(
-                                        fontSize: 16.0,
-                                        fontWeight: FontWeight.bold),
+                                      fontSize: 16.0,
+                                      fontFamily: Constants.POPPINS,
+                                      fontWeight: FontWeight.w700,
+                                    ),
                                   ),
                                 ),
                                 flex: 2,
@@ -257,10 +251,12 @@ class ProfilePageState extends State<ProfilePage>
                               Expanded(
                                 child: Container(
                                   child: new Text(
-                                    'State',
+                                    'Street address',
                                     style: TextStyle(
-                                        fontSize: 16.0,
-                                        fontWeight: FontWeight.bold),
+                                      fontSize: 16.0,
+                                      fontFamily: Constants.POPPINS,
+                                      fontWeight: FontWeight.w700,
+                                    ),
                                   ),
                                 ),
                                 flex: 2,
@@ -279,7 +275,7 @@ class ProfilePageState extends State<ProfilePage>
                                   padding: EdgeInsets.only(right: 10.0),
                                   child: new TextField(
                                     decoration: const InputDecoration(
-                                        hintText: "Enter Pin Code"),
+                                        hintText: "For timely deliveries"),
                                     enabled: !_status,
                                   ),
                                 ),
@@ -288,7 +284,7 @@ class ProfilePageState extends State<ProfilePage>
                               Flexible(
                                 child: new TextField(
                                   decoration: const InputDecoration(
-                                      hintText: "Enter State"),
+                                      hintText: "For timely deliveries"),
                                   enabled: !_status,
                                 ),
                                 flex: 2,
@@ -299,7 +295,45 @@ class ProfilePageState extends State<ProfilePage>
                     ],
                   ),
                 ),
-              )
+              ),
+              // add save and cancel buttons
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    RaisedButton(
+                      onPressed: () {
+                        Navigator.pushReplacementNamed(context, "/mainpage");
+                      },
+                      color: Colors.orange,
+                      child: Text(
+                        'Save',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14.0,
+                          fontFamily: Constants.POPPINS,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ),
+                    RaisedButton(
+                      onPressed: () {},
+                      color: Colors.blue,
+                      child: Text(
+                        'Cancel',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14.0,
+                          fontFamily: Constants.POPPINS,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ],
@@ -369,7 +403,7 @@ class ProfilePageState extends State<ProfilePage>
   Widget _getEditIcon() {
     return new GestureDetector(
       child: new CircleAvatar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.orange,
         radius: 14.0,
         child: new Icon(
           Icons.edit,
