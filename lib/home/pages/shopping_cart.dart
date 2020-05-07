@@ -143,6 +143,7 @@ class ShopingCartPage extends StatelessWidget {
             _price(),
             SizedBox(height: 30),
             _submitButton(context),
+            SizedBox(height: 50),
           ],
         ),
       ),

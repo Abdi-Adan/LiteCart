@@ -53,21 +53,17 @@ class ProfilePageState extends State<ProfilePage>
                           ],
                         ),
                         Padding(
-                            padding: EdgeInsets.only(top: 120.0),
+                            padding: EdgeInsets.only(top: 110.0),
                             child: new Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
-                                new CircleAvatar(
-                                  backgroundColor: Colors.orange,
-                                  radius: 25.0,
-                                  child: Text(
-                                    'Avatar',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontFamily: Constants.OPEN_SANS,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 14.0,
-                                    ),
+                                Text(
+                                  'Avatar',
+                                  style: TextStyle(
+                                    color: Colors.orange,
+                                    fontFamily: Constants.OPEN_SANS,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 14.0,
                                   ),
                                 )
                               ],
@@ -87,17 +83,17 @@ class ProfilePageState extends State<ProfilePage>
                     children: <Widget>[
                       Padding(
                           padding: EdgeInsets.only(
-                              left: 25.0, right: 25.0, top: 25.0),
+                              left: 25.0, right: 25.0),
                           child: new Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
                               new Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 mainAxisSize: MainAxisSize.min,
                                 children: <Widget>[
                                   new Text(
-                                    'Parsonal Information',
+                                    'Personal Information',
                                     style: TextStyle(
                                       fontFamily: Constants.POPPINS,
                                       fontWeight: FontWeight.w700,
@@ -117,7 +113,7 @@ class ProfilePageState extends State<ProfilePage>
                           )),
                       Padding(
                           padding: EdgeInsets.only(
-                              left: 25.0, right: 25.0, top: 25.0),
+                              left: 25.0, right: 25.0, top: 10),
                           child: new Row(
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
@@ -139,7 +135,7 @@ class ProfilePageState extends State<ProfilePage>
                           )),
                       Padding(
                           padding: EdgeInsets.only(
-                              left: 25.0, right: 25.0, top: 2.0),
+                              left: 25.0, right: 25.0),
                           child: new Row(
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
@@ -156,7 +152,7 @@ class ProfilePageState extends State<ProfilePage>
                           )),
                       Padding(
                           padding: EdgeInsets.only(
-                              left: 25.0, right: 25.0, top: 25.0),
+                              left: 25.0, right: 25.0, top: 10.0),
                           child: new Row(
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
@@ -178,7 +174,7 @@ class ProfilePageState extends State<ProfilePage>
                           )),
                       Padding(
                           padding: EdgeInsets.only(
-                              left: 25.0, right: 25.0, top: 2.0),
+                              left: 25.0, right: 25.0),
                           child: new Row(
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
@@ -193,7 +189,7 @@ class ProfilePageState extends State<ProfilePage>
                           )),
                       Padding(
                           padding: EdgeInsets.only(
-                              left: 25.0, right: 25.0, top: 25.0),
+                              left: 25.0, right: 25.0, top: 10.0),
                           child: new Row(
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
@@ -215,7 +211,7 @@ class ProfilePageState extends State<ProfilePage>
                           )),
                       Padding(
                           padding: EdgeInsets.only(
-                              left: 25.0, right: 25.0, top: 2.0),
+                              left: 25.0, right: 25.0),
                           child: new Row(
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
@@ -230,7 +226,7 @@ class ProfilePageState extends State<ProfilePage>
                           )),
                       Padding(
                           padding: EdgeInsets.only(
-                              left: 25.0, right: 25.0, top: 25.0),
+                              left: 25.0, right: 25.0, top: 10.0),
                           child: new Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -265,7 +261,7 @@ class ProfilePageState extends State<ProfilePage>
                           )),
                       Padding(
                           padding: EdgeInsets.only(
-                              left: 25.0, right: 25.0, top: 2.0),
+                              left: 25.0, right: 25.0),
                           child: new Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -291,14 +287,13 @@ class ProfilePageState extends State<ProfilePage>
                               ),
                             ],
                           )),
-                      !_status ? _getActionButtons() : new Container(),
                     ],
                   ),
                 ),
               ),
               // add save and cancel buttons
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -346,58 +341,6 @@ class ProfilePageState extends State<ProfilePage>
     // Clean up the controller when the Widget is disposed
     myFocusNode.dispose();
     super.dispose();
-  }
-
-  Widget _getActionButtons() {
-    return Padding(
-      padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 45.0),
-      child: new Row(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Expanded(
-            child: Padding(
-              padding: EdgeInsets.only(right: 10.0),
-              child: Container(
-                  child: new RaisedButton(
-                child: new Text("Save"),
-                textColor: Colors.white,
-                color: Colors.green,
-                onPressed: () {
-                  setState(() {
-                    _status = true;
-                    FocusScope.of(context).requestFocus(new FocusNode());
-                  });
-                },
-                shape: new RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(20.0)),
-              )),
-            ),
-            flex: 2,
-          ),
-          Expanded(
-            child: Padding(
-              padding: EdgeInsets.only(left: 10.0),
-              child: Container(
-                  child: new RaisedButton(
-                child: new Text("Cancel"),
-                textColor: Colors.white,
-                color: Colors.red,
-                onPressed: () {
-                  setState(() {
-                    _status = true;
-                    FocusScope.of(context).requestFocus(new FocusNode());
-                  });
-                },
-                shape: new RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(20.0)),
-              )),
-            ),
-            flex: 2,
-          ),
-        ],
-      ),
-    );
   }
 
   Widget _getEditIcon() {

@@ -18,31 +18,11 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   bool isHomePageSelected = true;
   Widget _appBar() {
-    return Container(
-      padding: AppTheme.padding,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          RotatedBox(
-            quarterTurns: 4,
-            child: _icon(Icons.sort, color: Colors.black54),
-          ),
-          ClipRRect(
-            borderRadius: BorderRadius.all(Radius.circular(13)),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Theme.of(context).backgroundColor,
-                boxShadow: <BoxShadow>[
-                  BoxShadow(
-                      color: Color(0xfff8f8f8),
-                      blurRadius: 10,
-                      spreadRadius: 10),
-                ],
-              ),
-              child: Image.asset("assets/home/user.png"),
-            ),
-          )
-        ],
+    return AppBar(
+      leading: Icon(
+        Icons.sort,
+        color: Colors.orange,
+        size: 30,
       ),
     );
   }
@@ -130,17 +110,16 @@ class _MainPageState extends State<MainPage> {
                     _appBar(),
                     _title(),
                     Expanded(
-                        child:AnimatedSwitcher(
-                          duration: Duration(milliseconds: 300),
-                          switchInCurve: Curves.easeInToLinear,
-                          switchOutCurve: Curves.easeOutBack,
-                          child:  isHomePageSelected
-                            ? MyHomePage()
-                            : Align(
-                              alignment: Alignment.topCenter,
-                              child:ShopingCartPage(),
-                            )
-                        ))
+                        child: AnimatedSwitcher(
+                            duration: Duration(milliseconds: 300),
+                            switchInCurve: Curves.easeInToLinear,
+                            switchOutCurve: Curves.easeOutBack,
+                            child: isHomePageSelected
+                                ? MyHomePage()
+                                : Align(
+                                    alignment: Alignment.topCenter,
+                                    child: ShopingCartPage(),
+                                  )))
                   ],
                 ),
               ),

@@ -15,7 +15,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   Widget _icon(IconData icon, {Color color = LightColor.iconColor}) {
     return Container(
       padding: EdgeInsets.all(10),
@@ -66,41 +65,13 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Widget _search() {
-    return Container(
-      margin: AppTheme.padding,
-      child: Row(
-        children: <Widget>[
-          Expanded(
-            child: Container(
-              height: 40,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  color: LightColor.lightGrey.withAlpha(100),
-                  borderRadius: BorderRadius.all(Radius.circular(10))),
-              child: TextField(
-                decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: "Search Products",
-                    hintStyle: TextStyle(fontSize: 12),
-                    contentPadding:
-                        EdgeInsets.only(left: 10, right: 10, bottom: 0, top: 5),
-                    prefixIcon: Icon(Icons.search, color: Colors.black54)),
-              ),
-            ),
-          ),
-          SizedBox(width: 20),
-          _icon(Icons.filter_list, color: Colors.black54),
-        ],
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return SingleChildScrollView(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[_search(), _categoryWidget(), _productWidget()],
-      );
+        children: <Widget>[_categoryWidget(), _productWidget()],
+      ),
+    );
   }
 }
