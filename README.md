@@ -1,56 +1,24 @@
-# lite_cart
+# Kiosk
 
 Next Gen eCommerce app for kitabu
 Finish frontend and deploy on a closeed Internal Testing Track or Alpha as fits best android app on Google PlayStore
 
-## ✅ Objectives 1; Code(Init, Home)
+## Features
 
-* [x] 📝 Create app
-* [x] 🔎 Switch to stable channe, upgrade
-* [x] ⌨️ SplashScreen
-* [x] ➡️ Onboarding
-* [x] 🗃  Profile; Personal Information
-* [x] 🔍 Product list, detail
-* [x] ⬅️ My Cart/Orders
-* [x] 🙈 Track orders
-* [x] ✨ My debts
+    * Real-Time Location-Based Mobile Delivery tracking
+        * Pay a premium for doorstep delivery and track your product in the app via google maps
+        * Super Fast Delivery and Instant Pickup Counters, Pick your convenient pickup Cpunter and      collect yout items from the pickup counters
+        * Realtime chat with our delivery agents to check up on delivery status
+    * Flexible Super Convenient Payment Options
+        * Single-click Checkout with pay on delivery/pickup and Lipa pole pole via instalments, It really just as easy as a single click
+        * Lipa Pole Pole via your debt recording and tracking dashboard. Just check out the items, pick them up/get them delivered and pay in instalments
+        * Just pay the delivery fees, and take care of product costs after delivery, with moneyback guarantee if the product doesnt meet your standards
+    * Digital Storefronts
+        * And Now anyone can Create digital storefronts for their Physical Stores to boost your overall sales
+        * Manage your products, create a listing, manage your orders and update your customers on delivery status.
+        * The app will help you out to secure customer credits by providing consentual credit scores and risk protection, with great benefits of adding an extra stream to be our delivery agents
 
-## Objectives 2; Debug Home
-
-* [x] 📝 Solve build failiure issue
-* [x] 🔎 Debug SplashScreen
-* [x] ⌨️ Debug onboarding
-* [ ] ➡️ Debug Profile
-* [ ] 🗃  Debug Home, Product List and DetailViews
-* [ ] 🔍 Debug Cart/my orders
-* [ ] ⬅️ Debug tracking orders
-* [ ] 🙈 Debug My debts
-
-## Objectives 3; Code(Admin)
-
-* [ ] 📝 Side Nav Bar, Merchant account control
-* [ ] 🔎 Dark theme
-* [ ] ⌨️ My Shop ProductViews, DetailViews,
-* [ ] ➡️ My Orders
-* [ ] 🗃  Delivery Status Tracking, Google-Maps
-* [ ] 🔍 My Transactions- My Creditors, My Credits and Payback
-
-## Objectives 4; Debugging(Admin)
-
-* [ ] 📝 Side Nav Bar, Merchant account control
-* [ ] 🔎 Dark theme
-* [ ] ⌨️ My Shop ProductViews, DetailViews,
-* [ ] ➡️ My Orders
-* [ ] 🗃  Delivery Status Tracking, Google-Maps
-* [ ] 🔍 My Transactions- My Creditors, My Credits and Payback
-
-## Prepping for Shipping @ Alpha Stage
-
-* [ ] 📝 Debugging frontend code
-* [ ] 📝 Signing app
-* [ ] 📝 Deploy to play store
-
-## FrontEnd Structure
+## User Experience FrontEnd Structure
 
     * Init
         * Splash - Dark theme (midnight blue), 5 second loading
