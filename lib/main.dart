@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lite_cart/home/root.dart';
 import 'package:lite_cart/init/onboarding/screens/landing_page.dart';
+import 'package:lite_cart/sideBar/side.dart';
 import 'init/ProfilePage.dart';
 import 'init/SplashScreen.dart';
 
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/profile': (BuildContext context) => ProfilePage(),
         '/onboarding': (BuildContext context) => Onboarding(),
         '/root': (BuildContext context) => MyControlScreen(),
+        '/side': (BuildContext context) => SideBar(),
       },
     );
   }

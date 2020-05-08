@@ -8,7 +8,7 @@ class MyDebts extends StatefulWidget {
 class _MyDebtsState extends State<MyDebts> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Container(
       
     );
   }

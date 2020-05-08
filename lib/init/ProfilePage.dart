@@ -27,8 +27,10 @@ class ProfilePageState extends State<ProfilePage>
         children: <Widget>[
           Column(
             children: <Widget>[
+
               new Container(
-                height: 250.0,
+                padding: EdgeInsets.symmetric(vertical: 10),
+                height: 170.0,
                 color: Colors.white,
                 child: new Column(
                   children: <Widget>[
@@ -113,7 +115,7 @@ class ProfilePageState extends State<ProfilePage>
                           )),
                       Padding(
                           padding: EdgeInsets.only(
-                              left: 25.0, right: 25.0, top: 10),
+                              left: 25.0, right: 25.0, top: 5),
                           child: new Row(
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
@@ -126,7 +128,7 @@ class ProfilePageState extends State<ProfilePage>
                                     style: TextStyle(
                                       fontSize: 16.0,
                                       fontFamily: Constants.POPPINS,
-                                      fontWeight: FontWeight.w700,
+                                     
                                     ),
                                   ),
                                 ],
@@ -300,7 +302,7 @@ class ProfilePageState extends State<ProfilePage>
                   children: <Widget>[
                     RaisedButton(
                       onPressed: () {
-                        Navigator.pushReplacementNamed(context, "/mainpage");
+                        Navigator.pushReplacementNamed(context, "/side");
                       },
                       color: Colors.orange,
                       child: Text(

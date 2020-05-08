@@ -54,6 +54,14 @@ flutter:
     - assets/home/small_tilt_shoe_3.png
     - assets/home/user.png
     - assets/home/watch.png
+    # SideBar assets
+    - assets/sideBar/imgs/cat.png
+    - assets/sideBar/imgs/dog.png
+    - assets/sideBar/imgs/horse.png
+    - assets/sideBar/imgs/parrot.png
+    - assets/sideBar/imgs/pet-cat1.png
+    - assets/sideBar/imgs/pet-cat2.png
+    - assets/sideBar/imgs/rabbit.png
 
   fonts:
     # onboarding fonts
@@ -73,3 +81,11 @@ flutter:
           weight: 600
         - asset: assets/fonts/OpenSans-Bold.ttf
           weight: 700
+    # SideBar assets
+    - family: Circular
+      fonts:
+        - asset: assets/sideBar/fonts/CircularStd-Medium.ttf
+        - asset: assets/sideBar/fonts/CircularAir-Light.ttf
+          weight: 100
+        - asset: assets/sideBar/fonts/CircularStd-Bold.ttf
+          weight: 500
