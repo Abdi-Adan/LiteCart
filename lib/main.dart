@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lite_cart/home/pages/mainPage.dart';
+import 'package:lite_cart/home/root.dart';
 import 'package:lite_cart/init/onboarding/screens/landing_page.dart';
-
 import 'init/ProfilePage.dart';
 import 'init/SplashScreen.dart';
 
@@ -13,13 +12,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'LiteCart',
+      theme: ThemeData(
+        primaryColor: Colors.orange,
+      ),
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
       routes: <String, WidgetBuilder>{
         '/splash': (BuildContext context) => SplashScreen(),
         '/profile': (BuildContext context) => ProfilePage(),
         '/onboarding': (BuildContext context) => Onboarding(),
-        '/mainpage': (BuildContext context) => MainPage(),
+        '/root': (BuildContext context) => MyControlScreen(),
       },
     );
   }

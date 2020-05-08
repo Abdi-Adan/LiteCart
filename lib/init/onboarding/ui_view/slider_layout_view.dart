@@ -1,8 +1,7 @@
 import 'dart:async';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lite_cart/init/onboarding/constants/constants.dart';
+import 'package:lite_cart/constants/constants.dart';
 import 'package:lite_cart/init/onboarding/model/slider.dart';
 import 'package:lite_cart/init/onboarding/widgets/slide_dots.dart';
 import 'package:lite_cart/init/onboarding/widgets/slide_items/slide_item.dart';

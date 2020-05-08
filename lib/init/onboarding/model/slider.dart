@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:lite_cart/init/onboarding/constants/constants.dart';
+import 'package:lite_cart/constants/constants.dart';
 
 class Slider {
   final String sliderImageUrl;

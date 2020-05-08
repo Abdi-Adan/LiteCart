@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lite_cart/init/onboarding/constants/constants.dart';
+import 'package:lite_cart/constants/constants.dart';
 import 'package:lite_cart/init/onboarding/model/slider.dart';
 
 
